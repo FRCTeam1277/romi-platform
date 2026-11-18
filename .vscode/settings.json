@@ -1,6 +1,10 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.server.launchMode": "Standard",
+  "java.dependency.enableDependencyCheckup": false,
+  "java.autobuild.enabled": true,
+  "java.import.gradle.enabled": true,
+  "java.import.gradle.wrapper.enabled": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -57,6 +61,5 @@
     "edu.wpi.first.math.proto.*",
     "edu.wpi.first.math.**.proto.*",
     "edu.wpi.first.math.**.struct.*",
-  ],
-  "java.dependency.enableDependencyCheckup": false
+  ]
 }

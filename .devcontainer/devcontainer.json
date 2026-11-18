@@ -1,0 +1,11 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vsliveshare.vsliveshare",
+        "usernamehw.errorlens",
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
