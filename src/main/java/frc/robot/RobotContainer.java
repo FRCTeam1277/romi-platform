@@ -58,8 +58,8 @@ public class RobotContainer {
         .onFalse(new PrintCommand("Button A Released"));
 
     // these are the auto routine options you will see!
-    autoChooser.setDefaultOption("Auto Routine Distance", new AutonomousDistance(drivetrain));
-    autoChooser.addOption("Auto Routine Time", new AutonomousTime(drivetrain));
+    autoChooser.setDefaultOption("Auto Routine Distance", new AutonDistanceExample(drivetrain));
+    autoChooser.addOption("Auto Routine Time", new AutonTimeExample(drivetrain));
     SmartDashboard.putData(autoChooser);
   }
 
