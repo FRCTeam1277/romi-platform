@@ -7,9 +7,9 @@ package frc.robot;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
-import frc.robot.commands.ArcadeDrive;
-import frc.robot.commands.AutonomousDistance;
-import frc.robot.commands.AutonomousTime;
+import frc.robot.challenge.AutonDistanceExample;
+import frc.robot.challenge.AutonTimeExample;
+import frc.robot.core.ArcadeDrive;
 import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj.romi.OnBoardIO;
 import edu.wpi.first.wpilibj.romi.OnBoardIO.ChannelMode;
@@ -58,8 +58,8 @@ public class RobotContainer {
         .onFalse(new PrintCommand("Button A Released"));
 
     // these are the auto routine options you will see!
-    autoChooser.setDefaultOption("Auto Routine Distance", new AutonomousDistance(drivetrain));
-    autoChooser.addOption("Auto Routine Time", new AutonomousTime(drivetrain));
+    autoChooser.setDefaultOption("Auto Routine Distance", new AutonDistanceExample(drivetrain));
+    autoChooser.addOption("Auto Routine Time", new AutonTimeExample(drivetrain));
     SmartDashboard.putData(autoChooser);
   }
 

@@ -2,12 +2,14 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
 
-package frc.robot.commands;
+package frc.robot.challenge;
 
+import frc.robot.core.DriveTime;
+import frc.robot.core.TurnTime;
 import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
-public class AutonomousTime extends SequentialCommandGroup {
+public class AutonTimeExample extends SequentialCommandGroup {
   /**
    * Creates a new Autonomous Drive based on time. This will drive out for a period of time, turn
    * around for time (equivalent to time to turn around) and drive forward again. This should mimic
@@ -15,7 +17,7 @@ public class AutonomousTime extends SequentialCommandGroup {
    *
    * @param drivetrain The drive subsystem on which this command will run
    */
-  public AutonomousTime(Drivetrain drivetrain) {
+  public AutonTimeExample(Drivetrain drivetrain) {
     addCommands(
         new DriveTime(-0.6, 2.0, drivetrain),
         new TurnTime(-0.5, 1.3, drivetrain),
